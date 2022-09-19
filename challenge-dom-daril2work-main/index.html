@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge - DOM</title>
+  </head>
+  <style>
+    
+    body{
+      background-color: #988ec9;
+    }
+    
+    #app {
+      width: 320px;
+      height: 480px;
+      padding: 10px;
+      margin: 0;
+      background-color: white;
+      border-radius: 10px;
+    }
+
+    #todo-title{
+      text-align: "center";
+    }
+
+    
+    input[type=text]:focus {
+        border: 3px solid #555;
+    }
+   
+
+  </style>
+  <body>
+    <div id="app">
+      <!-- TODO: Buatlah sebuah header dengan id todo-title -->
+      <header id="todo-title">My Todo Lists</header>
+      <!-- TODO: Buatlah sebuah subtitle dengan id todo-subtitle -->
+      <h3 id="todo-subtitle">Today I Need To</h3>
+      <!-- Section: input -->
+      <section>
+        <!-- TODO: Buatlah sebuah input bertipe text dengan id todo-input -->
+        <input type="text" id="todo-input" placeholder="create to-do..">
+        <!-- TODO: Buatlah sebuah button dengan id todo-submit -->
+        <button id="todo-submit">Submit</button>
+      </section>
+      <!-- Section output -->
+      <!-- TODO: Buatlah sebuah <ul> dengan id todo-output -->
+        <ul id="todo-output"></ul>
+    </div>
+
+    <!-- ! Untuk tantangan ini, script jangan diubah ke external js yah ! -->
+    <script>
+      // TODO: Deklarasi variable sesuai dengan kebutuhan di sini
+      let button;
+      let input;
+      let output;
+
+      // TODO: Buatlah sebuah fungsi dengan nama fnClickHandler
+      // Fungsi yang digunakan untuk menambahkan tulisan
+      // Jangan ubah cara deklarasi fungsinya, cukup isi saja
+      function fnClickHandler(toDoItem) {}
+
+      // TODO: register event onclick / addEventListener untuk button
+      // akan menjalankan fungsi fnClickHandler
+      document.addEventListener("onclick",fnClickHandler);
+      // TODO: register event onkeypress / addEventListener untuk input
+      document.addEventListener("oneypress",fnClickHandler);
+      // sehingga saat di input ditekan enter akan menjalankan fungsi fnClickHandler juga
+    </script>
+  </body>
+</html>
